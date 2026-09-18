@@ -67,4 +67,4 @@ systems built on graph data rather than log search.
 
 ## Contact
 
-atulsingh.rathore@enfec.com
+atulrathore667@gmail.com
