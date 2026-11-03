@@ -12,19 +12,17 @@ talking to Postgres, Redis, or a graph database, depending on the problem.
 ## Current focus
 
 - **Realtime infrastructure** — WebRTC/SFU media servers, signaling, and the
-  control-plane APIs and SDKs developers use to talk to them ([Raven](https://github.com/atulsinghhhh/Raven))
+  control-plane APIs and SDKs developers use to talk to them ([Livqeno](https://github.com/atulsinghhhh/Livqeno) · [livqeno.com](https://livqeno.com))
 - **Backend services in Go** — multi-service systems for uploads, transcoding,
   and async processing ([streamvault](https://github.com/atulsinghhhh/streamvault))
-- **Graph-based reasoning over engineering data** — Neo4j + LLM-generated
-  queries against GitHub/Jira/Datadog ([graph](https://github.com/atulsinghhhh/graph))
 
 ## Featured projects
 
-**[Raven](https://github.com/atulsinghhhh/Raven)** — Developer-first realtime
+**[Livqeno](https://github.com/atulsinghhhh/Livqeno)** — Developer-first realtime
 infrastructure: WebRTC/SFU media plane, signaling, a control API, and SDKs, so
 other developers can add video/voice/chat/live-streaming without running their
 own media servers. The hard part: session negotiation, ICE/TURN handling, and
-data-channel reliability under real network conditions.
+data-channel reliability under real network conditions. [livqeno.com](https://livqeno.com)
 `TypeScript · Pion (Go) · Redis · Postgres`
 
 **[streamvault](https://github.com/atulsinghhhh/streamvault)** — File/video
@@ -33,12 +31,6 @@ into Go microservices (auth, API, upload, image/video workers). The hard part:
 presigned direct-to-storage uploads and an async transcode pipeline that
 survives worker crashes.
 `Go · Next.js · Postgres · MinIO · Redis · asynq`
-
-**[graph](https://github.com/atulsinghhhh/graph)** — Reasons over a graph of
-deployments, PRs, engineers, services and incidents to answer "why did this
-break?" with a cited answer instead of a manual search across three tools.
-The hard part: turning natural-language questions into safe, correct Cypher.
-`Next.js · Express · Neo4j · Postgres · Groq`
 
 **[lango](https://github.com/atulsinghhhh/lango)** — Flutter app for learning
 Korean and Japanese together, with a hand-built SM-2 spaced-repetition engine
