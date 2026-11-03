@@ -46,16 +46,19 @@ pipeline that behaves on a real phone, not just a demo.
 
 ## Technical stack
 
-**Backend** — Go · TypeScript (Node) · Express
-**Realtime** — WebRTC · Pion · WebSockets
-**Data** — PostgreSQL · Redis · Neo4j · Supabase
-**Infra** — Docker · MinIO · asynq
-**Frontend / mobile** — Next.js · React · Flutter
+**Languages** — JavaScript · TypeScript · Go · SQL · C++ · C · Java (basic)
+**Frameworks** — Next.js · React · React Native · Flutter · Express.js · NestJS · Fastify · FastAPI · Django (basic)
+**Databases** — PostgreSQL · MySQL · MongoDB · Redis · Neo4j · Supabase
+**Realtime** — WebRTC · Pion · WebSockets · Kafka
+**Infra / DevOps** — Docker · Kubernetes · CI/CD · Azure · AWS (familiar)
+**AI / LLM** — LLM API integration (Groq) · prompt engineering · LLM-generated query generation (Cypher) · RAG basics
 
 ## Engineering interests
 
 Real-time media systems, service-to-service reliability, and reasoning
-systems built on graph data rather than log search.
+systems built on graph data rather than log search. Also interested in
+applying LLMs to real backend problems — turning natural-language input into
+safe, structured queries and actions instead of bolting on a chatbot.
 
 ## Contact
 
