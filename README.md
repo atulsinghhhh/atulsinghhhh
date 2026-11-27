@@ -1,81 +1,77 @@
-# atul
+<h1 align="center">Hey, I'm Atul 👋</h1>
 
-Backend & realtime infrastructure engineer. I build the systems other
-products sit on top of — media servers, APIs, and the data layers behind them.
+<p align="center">
+  <b>Backend & realtime infrastructure engineer</b><br/>
+  I build the systems other products sit on top of: media servers, APIs, and the data layers behind them.
+</p>
 
-## About
+<p align="center">
+  <a href="https://livqeno.com"><img src="https://img.shields.io/badge/Livqeno-live-2ea44f?style=for-the-badge" alt="Livqeno"/></a>
+  <a href="https://www.linkedin.com/in/atul-singh-rathore/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://leetcode.com/u/atulsinghh/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/></a>
+  <img src="https://img.shields.io/badge/Bangalore-India-orange?style=for-the-badge" alt="Bangalore, India"/>
+</p>
 
-I build backend infrastructure: real-time media systems, service APIs, and
-the databases and queues behind them. Most of what's here is TypeScript or Go,
-talking to Postgres, Redis, or a graph database, depending on the problem.
+---
 
-## Current focus
+## 🔭 Current focus
 
-- **Realtime infrastructure**: WebRTC/SFU media servers, signaling, and the
-  control-plane APIs and SDKs developers use to talk to them
-  ([livqeno.com](https://livqeno.com) · [docs](https://docs.livqeno.com) · [SDKs](https://github.com/atulsinghhhh/livqeno-sdks))
-- **Payments and ledgers in Go + PostgreSQL**: correctness under concurrency,
-  retries and provider failures ([FinCore](https://github.com/atulsinghhhh/FinCore))
-- **Backend services in Go**: multi-service systems for uploads, transcoding,
-  and async processing ([streamvault](https://github.com/atulsinghhhh/streamvault))
+| | |
+|---|---|
+| 📡 **Realtime infrastructure** | WebRTC/SFU media servers, signaling, and the control-plane APIs and SDKs developers use ([livqeno.com](https://livqeno.com) · [docs](https://docs.livqeno.com) · [SDKs](https://github.com/atulsinghhhh/livqeno-sdks)) |
+| 💸 **Payments & ledgers** | Go + PostgreSQL: correctness under concurrency, retries and provider failures ([FinCore](https://github.com/atulsinghhhh/FinCore)) |
+| ⚙️ **Backend services in Go** | Multi-service systems for uploads, transcoding and async processing ([streamvault](https://github.com/atulsinghhhh/streamvault)) |
 
-## Featured projects
+## 🚀 Featured projects
 
-**[Livqeno](https://livqeno.com)**: Developer-first realtime infrastructure:
-WebRTC/SFU media plane, signaling, a control API, and SDKs, so other developers
-can add video/voice/chat/live-streaming without running their own media servers.
-The hard part: session negotiation, ICE/TURN handling, and data-channel
-reliability under real network conditions. The platform is proprietary; the
-public client SDKs are in [livqeno-sdks](https://github.com/atulsinghhhh/livqeno-sdks).
-`Go (Pion) · TypeScript · Redis · Postgres · Docker · Kubernetes`
+### 📡 [Livqeno](https://livqeno.com)
+Developer-first realtime infrastructure: WebRTC/SFU media plane, signaling, a control API and SDKs, so developers can add video, voice, chat and live streaming without running their own media servers.
+**The hard part:** session negotiation, ICE/TURN handling, and data-channel reliability under real network conditions. The platform is proprietary; the public client SDKs are in [livqeno-sdks](https://github.com/atulsinghhhh/livqeno-sdks).
+`Go (Pion)` `TypeScript` `Redis` `Postgres` `Docker` `Kubernetes`
 
-**[FinCore](https://github.com/atulsinghhhh/FinCore)**: Ledger-backed payment
-processing: payments, refunds, payouts and settlement reconciliation on a
-double-entry ledger whose rules are enforced by PostgreSQL itself. Idempotent
-APIs, a transactional outbox for webhooks, and a sweeper for lost provider
-webhooks. A k6 load test ran 14,825 requests in 30 s with 0 duplicate charges
-and money conserved to the paisa.
-`Go · PostgreSQL · Razorpay · Next.js · k6`
+### 💸 [FinCore](https://github.com/atulsinghhhh/FinCore)
+Ledger-backed payment processing: payments, refunds, payouts and settlement reconciliation on a double-entry ledger whose rules are enforced by PostgreSQL itself. Idempotent APIs, a transactional outbox for webhooks, and a sweeper for lost provider webhooks.
+**Result:** k6 load test, 14,825 requests in 30 s, 0 duplicate charges, money conserved to the paisa.
+`Go` `PostgreSQL` `Razorpay` `Next.js` `k6`
 
-**[streamvault](https://github.com/atulsinghhhh/streamvault)**: File/video
-upload, storage and streaming platform, mid-rewrite from a Next.js monolith
-into Go microservices (auth, API, upload, image/video workers). The hard part:
-presigned direct-to-storage uploads and an async transcode pipeline that
-survives worker crashes.
-`Go · Next.js · Postgres · MinIO · Redis · asynq`
+### 🎞️ [streamvault](https://github.com/atulsinghhhh/streamvault)
+File/video upload, storage and streaming platform, mid-rewrite from a Next.js monolith into Go microservices (auth, API, upload, image/video workers).
+**The hard part:** presigned direct-to-storage uploads and an async transcode pipeline that survives worker crashes.
+`Go` `Next.js` `Postgres` `MinIO` `Redis` `asynq`
 
-**[Settle](https://settle-jet.vercel.app)**: USDC checkout on Solana (devnet).
-Unique payment address per order via HD wallet derivation, Sign-In With Solana
-for merchants, and automated on-chain payment reconciliation into PostgreSQL.
-`TypeScript · Next.js · Solana · PostgreSQL`
+### ◎ [Settle](https://settle-jet.vercel.app)
+USDC checkout on Solana (devnet). Unique payment address per order via HD wallet derivation, Sign-In With Solana for merchants, and automated on-chain payment reconciliation into PostgreSQL.
+`TypeScript` `Next.js` `Solana` `PostgreSQL`
 
-**[Swaraloom](https://github.com/atulsinghhhh/Swaraloom)**: Fully local,
-privacy-first AI voice agent for Apple Silicon: STT/LLM/TTS pipeline with
-measured benchmarks, a memory budget enforced in code, and no cloud APIs.
-`Python · MLX · Qwen3`
+### 🎙️ [Swaraloom](https://github.com/atulsinghhhh/Swaraloom)
+Fully local, privacy-first AI voice agent for Apple Silicon: STT/LLM/TTS pipeline with measured benchmarks, a memory budget enforced in code, and no cloud APIs.
+`Python` `MLX` `Qwen3`
 
-## Other projects
+**Also:** [lango](https://github.com/atulsinghhhh/lango) (Flutter, spaced-repetition engine) · [waymark](https://github.com/atulsinghhhh/waymark) (GPS route tracking and simplification) · [personal-os](https://github.com/atulsinghhhh/personal-os) (Flutter)
 
-[lango](https://github.com/atulsinghhhh/lango) (Flutter, spaced-repetition engine) ·
-[waymark](https://github.com/atulsinghhhh/waymark) (GPS route tracking and simplification) ·
-[personal-os](https://github.com/atulsinghhhh/personal-os) (Flutter)
+## 🛠️ Tech stack
 
-## Technical stack
+<p>
+  <img src="https://skillicons.dev/icons?i=js,ts,go,py,cpp,c,java&perline=7" alt="Languages"/><br/>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,fastify,fastapi,django,flutter&perline=9" alt="Frameworks"/><br/>
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,neo4j,supabase,kafka&perline=7" alt="Data"/><br/>
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions,azure,aws&perline=5" alt="Infra"/>
+</p>
 
-**Languages** — JavaScript · TypeScript · Go · SQL · C++ · C · Java (basic)
-**Frameworks** — Next.js · React · React Native · Flutter · Express.js · NestJS · Fastify · FastAPI · Django (basic)
-**Databases** — PostgreSQL · MySQL · MongoDB · Redis · Neo4j · Supabase
-**Realtime** — WebRTC · Pion · WebSockets · Kafka
-**Infra / DevOps** — Docker · Kubernetes · CI/CD · Azure · AWS (familiar)
-**AI / LLM** — LLM API integration (Groq) · prompt engineering · LLM-generated query generation (Cypher) · RAG basics
+**Realtime:** WebRTC · Pion · WebSockets · Kafka  
+**AI / LLM:** LLM API integration (Groq) · prompt engineering · LLM-generated query generation (Cypher) · RAG basics
 
-## Engineering interests
+## 📊 GitHub stats
 
-Real-time media systems, service-to-service reliability, and reasoning
-systems built on graph data rather than log search. Also interested in
-applying LLMs to real backend problems — turning natural-language input into
-safe, structured queries and actions instead of bolting on a chatbot.
+<p>
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=atulsinghhhh&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats"/>
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atulsinghhhh&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages"/>
+</p>
 
-## Contact
+## 💡 Engineering interests
+
+Real-time media systems, service-to-service reliability, and reasoning systems built on graph data rather than log search. Also applying LLMs to real backend problems: turning natural-language input into safe, structured queries and actions instead of bolting on a chatbot.
+
+## 📫 Contact
 
 atulrathore667@gmail.com
