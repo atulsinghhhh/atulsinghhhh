@@ -9,7 +9,7 @@
   <a href="https://livqeno.com"><img src="https://img.shields.io/badge/Livqeno-live-2ea44f?style=for-the-badge" alt="Livqeno"/></a>
   <a href="https://www.linkedin.com/in/atul-singh-rathore/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://leetcode.com/u/atulsinghh/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/></a>
-  <img src="https://img.shields.io/badge/Bangalore-India-orange?style=for-the-badge" alt="Bangalore, India"/>
+  <img src="https://img.shields.io/badge/Hyderabad-India-orange?style=for-the-badge" alt="Hyderabad, India"/>
 </p>
 
 ---
@@ -52,14 +52,15 @@ Fully local, privacy-first AI voice agent for Apple Silicon: STT/LLM/TTS pipelin
 ## 🛠️ Tech stack
 
 <p>
-  <img src="https://skillicons.dev/icons?i=js,ts,go,py,cpp,c,java&perline=7" alt="Languages"/><br/>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,fastify,fastapi,django,flutter&perline=9" alt="Frameworks"/><br/>
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,neo4j,supabase,kafka&perline=7" alt="Data"/><br/>
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions,azure,aws&perline=5" alt="Infra"/>
+  <img src="https://skillicons.dev/icons?i=js,ts,go,py,cpp,java&perline=6" alt="Languages"/><br/>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,flutter&perline=6" alt="Frameworks"/><br/>
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,supabase,prisma&perline=6" alt="Databases"/><br/>
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions,prometheus,grafana,azure&perline=6" alt="Infra"/>
 </p>
 
-**Realtime:** WebRTC · Pion · WebSockets · Kafka  
-**AI / LLM:** LLM API integration (Groq) · prompt engineering · LLM-generated query generation (Cypher) · RAG basics
+**Also:** Fastify · FastAPI · Django (basic) · Neo4j · Kafka · C · AWS (familiar)  
+**Realtime:** WebRTC · Pion · WebSockets  
+**AI / LLM:** LLM API integration (Groq) · prompt engineering · LLM-generated query generation (Cypher) · local LLMs (MLX, Qwen3) · STT/TTS · RAG basics
 
 ## 📊 GitHub stats
 
@@ -70,7 +71,9 @@ Fully local, privacy-first AI voice agent for Apple Silicon: STT/LLM/TTS pipelin
 
 ## 💡 Engineering interests
 
-Real-time media systems, service-to-service reliability, and reasoning systems built on graph data rather than log search. Also applying LLMs to real backend problems: turning natural-language input into safe, structured queries and actions instead of bolting on a chatbot.
+- 🗄️ **Databases:** correctness at the data layer, such as ledger rules enforced inside PostgreSQL, idempotency, transactional outboxes and query/API performance, across Postgres, MongoDB, Redis and graph data.
+- 🤖 **AI / ML:** applying LLMs to real backend problems, such as local STT → LLM → TTS voice agents with measured latency and memory, RAG, and turning natural-language input into safe, structured queries and actions instead of bolting on a chatbot.
+- 📡 **Real-time systems:** media servers and service-to-service reliability.
 
 ## 📫 Contact
 
